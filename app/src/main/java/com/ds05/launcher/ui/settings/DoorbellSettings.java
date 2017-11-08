@@ -91,7 +91,7 @@ public class DoorbellSettings extends ModuleBaseFragment
         String key = preference.getKey();
 
         if(key.equals(KEY_DOORBELL_LIGHT)) {
-          //  PrefDataManager.setDoorbellLight();
+            PrefDataManager.setDoorbellLight();
             AppUtil.uploadConfigMsgToServer(getActivity());
         } else if(key.equals(KEY_DOORBELL_SOUND)) {
             ListPreferenceExt pref = (ListPreferenceExt) preference;
